@@ -1,5 +1,7 @@
-i = int(input("Enter the value: "))
-for r in range(i):
-    for k in range(r):
-        print(k+1, end=' ')
-    print()
+size = int(input("Enter the size of the triangle: "))
+
+for row in range(size):
+    padding = " " * (size - row - 1)
+    stars = " ".join("*" for _ in range(row + 1))
+    print(padding + stars)
+    
